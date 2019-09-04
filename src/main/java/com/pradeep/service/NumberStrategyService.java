@@ -65,6 +65,26 @@ public class NumberStrategyService {
                     break;
             }
         }
+        for(Integer i: number){
+            switch (i){
+                case 10:
+                    tensCount--;
+                    onesCount++;
+                    break;
+                case 20:
+                    twentiesCount--;
+                    tensCount++;
+                    break;
+                case 30:
+                    thirtiesCount--;
+                    twentiesCount++;
+                    break;
+                case 40:
+                    fortiesCount--;
+                    thirtiesCount++;
+                    break;
+            }
+        }
         return (onesCount == 0 || tensCount == 0 || twentiesCount == 0 || thirtiesCount == 0
                 || fortiesCount == 0);
     }
