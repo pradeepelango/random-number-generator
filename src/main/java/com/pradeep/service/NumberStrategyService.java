@@ -43,7 +43,7 @@ public class NumberStrategyService {
         int thirtiesCount = 0;
         int fortiesCount = 0;
         for (Integer i : number) {
-            if (i == 10){
+            if (i == 10) {
                 onesCount++;
                 continue;
             }
@@ -65,8 +65,8 @@ public class NumberStrategyService {
                     break;
             }
         }
-        for(Integer i: number){
-            switch (i){
+        for (Integer i : number) {
+            switch (i) {
                 case 10:
                     tensCount--;
                     onesCount++;
